@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fast-rpc-api" />
+        <module name="fast-rpc-consumer" />
+        <module name="fast-rpc-provider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer" target="1.8" />
+      <module name="fast-rpc" target="1.8" />
+      <module name="FastRPC" target="1.8" />
+      <module name="provider" target="1.8" />
+      <module name="provider-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="fast-rpc-api" options="-parameters" />
+      <module name="fast-rpc-consumer" options="-parameters" />
+      <module name="fast-rpc-provider" options="-parameters" />
+    </option>
+  </component>
+</project>
